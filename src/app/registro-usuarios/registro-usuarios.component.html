@@ -1,0 +1,59 @@
+<div class="registro-page">
+    <div class="registro-container">
+      <form class="registro-form">
+        <h2>Regístrate</h2>
+        <div class="form-group">
+          <label for="matricula">Matrícula</label>
+          <input type="text" id="matricula" name="matricula" class="form-control" placeholder="Ingresa tu matrícula" required>
+        </div>
+        <div class="form-group">
+          <label for="contrasenia">Contraseña</label>
+          <input type="password" id="contrasenia" name="contrasenia" class="form-control" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo de usuario</label>
+            <select name="tipo" id="tipo" >
+                <option value="ADMINISTRADOR">Admininistrador</option>
+                <option value="ESTUDIANTE">Estudiante</option>   
+              </select>
+        </div>
+          <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo" >
+                <option value="Coordinador Administrativo">Coordinador Administrativo</option>
+                <option value="Coordinador de carrera">Coordinador de carrera</option> 
+                <option value="Coordinador de Servicios Escolares">Coordinadora de Servicios Escolares</option> 
+                <option value="Encargado de laboratorio">Encargado de laboratorio</option> 
+                <option value="Coordinadora de Tutorías">Coordinadora de Tutorías</option>
+                <option value="Coordinación de Servicios Estudiantiles">Coordinación de Servicios Estudiantiles</option>
+                <option value="Coordinadora de Laboratorios de Licenciatura">Coordinadora de Laboratorios de Licenciatura</option>
+                <option value="Coordinador de Plataformas Virtuales y Bases de Datos">Coordinador de Plataformas Virtuales y Bases de Datos</option>
+                <option value="Coordinador de Centros de Cómputo y Red Informática">Coordinador de Centros de Cómputo y Red Informática</option>
+          
+                <option value="Intendente">Intendente</option>
+                <option value="Estudiante">Estudiante</option> 
+                
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Area</label>
+            <select name="area" id="area" >
+                <option value="Ingenieria de Software">Ingenieria de Software</option>
+                <option value="Ingenieria Civil">Ingenieria Civil</option> 
+                <option value="Ingenieria en Geodesia">Ingenieria en Geodesia</option>
+                <option value="Ingenieria en Procesos Industriales">Ingenieria en Procesos Industriales</option> 
+                <option  value="Ingeniera en Nanotecnologia y Energias renovables">Ingeniera en Nanotecnologia y Energias renovables</option>
+                <option value="Infraestructura y limpieza">Infraestructura y limpieza</option>
+                <option value="Administración">Administración</option> 
+                <option value="Departamento de Redes e Informática">Departamento de Redes e Informática</option>
+                
+              </select>
+          </div>
+
+        <button type="submit" class="btn-login">REGISTRAR</button>
+        <button type="submit" class="btn-cancelar" (click)="cancelar()">CANCELAR</button>
+      </form>
+    </div>
+  </div>
+  
+

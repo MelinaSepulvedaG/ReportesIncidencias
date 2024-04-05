@@ -1,0 +1,80 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+  margin-left: 0%;
+  font-family: 'Verdana', sans-serif;
+}
+
+.login-container {
+  width: 300px;
+  background-color:#08338fe0;
+  background: rgb(29,112,184);
+  background: linear-gradient(0deg, rgba(29,112,184,1) 0%, rgba(0,59,126,1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.div-registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ffffff;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-registro{
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+ 
+  color: #BA9D15 ;
+  cursor: pointer;
+}
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #BA9D15;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #D8B933;
+}
+.btn-registro:hover{
+  background-color:  #123fa1 ;
+}
+  #matricula{
+    margin-left: -10px;
+  }
+
+  #contrasenia{
+    margin-left: -10px;
+  }
+
+  .btn-login{
+    margin-left: -5px;
+  }
