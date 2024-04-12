@@ -18,4 +18,7 @@ export class MisReportesComponent {
     this.router.navigate(['/Mis-reportes']);
   }
 
+  verEstatus(){
+    this.router.navigate(['/Estatus']);
+  }
 }

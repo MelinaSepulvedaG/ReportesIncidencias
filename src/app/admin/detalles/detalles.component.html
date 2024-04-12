@@ -1,0 +1,81 @@
+
+  <div class="detalles-reporte">
+    <div class="detalles-page">
+      <div class="detalles-container">
+        <form class="detalles-form">
+          <h2>Reporte de incidente</h2>
+          <div class="form-group">
+            <label for="nombreIncidente">Nombre del incidente</label>
+            <input type="text" id="nombreIncidente" name="nombreIncidente" class="form-control" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción del incidente</label>
+            <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+           
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de incidente</label>
+           
+            <select name="area" id="area">
+                 <option value="Limpieza">Limpieza</option>
+                <option value="Infraestructura">Infraestructura </option>
+                <option value="Administración">Administración</option> 
+                <option value="Redes "> Redes</option>
+                <option value="Pagina web">Pagina web</option>
+                
+              </select>
+          </div>
+          
+          <button  type="submit" class="btn-proceso">En proceso</button>
+          <button  type="submit" class="btn-resuelto">Resuelto</button>
+         
+        </form>
+      </div>
+  </div>
+
+ 
+
+        <!-- ------------------------FORMULARIO DE ASIGNAR---------------------------  -->  
+  
+      <div class="asignar-page">
+        <div class="asignar-container">
+          <form class="asignar-form">
+            <h2>Asignar al responsable</h2>
+            <div class="form-group">
+              <label for="departamento">Departamento</label>
+              <select name="departamento" id="departamento" class="form-control">
+                <option value="Coordinador Administrativo">Coordinador Administrativo</option>
+                  <option value="Coordinador de carrera">Coordinador de carrera</option> 
+                  <option value="Coordinador de Servicios Escolares">Coordinadora de Servicios Escolares</option> 
+                  <option value="Encargado de laboratorio">Encargado de laboratorio</option> 
+                  <option value="Coordinadora de Tutorías">Coordinadora de Tutorías</option>
+                  <option value="Coordinación de Servicios Estudiantiles">Coordinación de Servicios Estudiantiles</option>
+                  <option value="Coordinadora de Laboratorios de Licenciatura">Coordinadora de Laboratorios de Licenciatura</option>
+                  <option value="Coordinador de Plataformas Virtuales y Bases de Datos">Coordinador de Plataformas Virtuales y Bases de Datos</option>
+                  <option value="Coordinador de Centros de Cómputo y Red Informática">Coordinador de Centros de Cómputo y Red Informática</option>
+            
+                  <option value="Intendente">Intendente</option>
+               
+             </select>
+             
+            </div>
+            <button class="asignar" type="submit">Asignar</button>
+            <h2>Evidencia del Incidente</h2>
+            
+            <div class="form-group">
+              <img class="img-evidencia" src="./assets/LOGO_FIM.png" alt="">
+            </div>
+
+          </form>
+        </div>
+      </div>
+   
+    </div>
+
+
+      
+ 

@@ -20,6 +20,9 @@ reportar(){
 misReportes():void{
   this.router.navigate(['/Mis-reportes']);
 }
+activar():void{
+  this.router.navigate(['/Activar'])
+}
 
 cerrar_sesion(){
   

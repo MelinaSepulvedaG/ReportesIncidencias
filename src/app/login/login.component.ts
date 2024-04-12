@@ -17,7 +17,14 @@ export class LoginComponent {
   ventanaRegistro(): void {
     this.router.navigate(['/Registro-usuarios']); 
   }
+  //es nomas pa ver las pantallas de los 3 tipos de usuario
   login():void{
     this.router.navigate(['/Home']);
+  }
+  loginAdmin():void{
+    this.router.navigate(['/Home-Admin']);
+  }
+  loginReponsable():void{
+    this.router.navigate(['/Home-Responsable']);
   }
 }

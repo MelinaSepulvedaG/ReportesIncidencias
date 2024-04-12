@@ -1,0 +1,18 @@
+
+<button class="volver" type="submit" (click)="volver()"><</button>
+<div class="activar-page">
+    <div class="activar-container">
+      <form class="activar-form">
+        <h2>Activa tu cuenta</h2>
+       
+        <div class="form-group">
+          <label for="activacion">Ingresa el código que enviamos a tu email registrado para activar tu cuenta</label>
+          <input type="text" id="activacion" name="activacion" class="form-control" placeholder="Ingresa aqui tu codigo de 9 caracteres" required>
+          
+        </div>
+       <button class="btn-activar" type="submit" (click)="msgActivado()">Activar</button>
+       <button class="btn-cancelar" type="submit" (click)="cancelarAdmin()">Cancelar</button>
+
+      </form>
+    </div>
+  </div>

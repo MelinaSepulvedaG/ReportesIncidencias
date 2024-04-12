@@ -1,0 +1,20 @@
+<div class="activar-page">
+    <div class="activar-container">
+      <form class="activar-form">
+        <h2>Actualiza el tipo de usuario</h2>
+       
+        <div class="form-group">
+          <label for="tipoUsuario">Selecciona el tipo de usuario que desea</label>
+          <select name="tipoUsuario" id="tipoUsuario">
+            <option value="Responsable">RESPONSABLE</option>
+            <option value="Normal">NORMAL</option>
+            <option value="Admininistrador">ADMINISTRADOR</option>
+          </select>
+        </div>
+       <button class="btn-actualizar"  type="submit" >Actualizar</button>
+       <button class="btn-cancelar" type="submit" (click)="cancelar()" >Cancelar</button>
+
+      </form>
+    </div>
+  </div>
+

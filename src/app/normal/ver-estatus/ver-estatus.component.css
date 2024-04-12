@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+.evidencia1{
+    width: 200px;
+  height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+.evidencia2{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.evidencia3{
+  width: 200px;
+  height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
+}

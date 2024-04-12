@@ -42,7 +42,7 @@
     border-radius: 5px;
   }
   
-  .btn-login {
+  .btn-registro {
     width: 100%;
     padding: 10px;
     border: none;
@@ -54,6 +54,7 @@
   .btn-cancelar{
     width: 100%;
     padding: 10px;
+    padding-top: 10px;
     border: none;
     border-radius: 5px;
     background-color:  #a11212;
@@ -77,6 +78,23 @@
         color: #222; 
         outline: none;
       }
+
+      #email{
+        margin-left: -10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        border: 1px solid #aaa;
+      }
+      #email:hover{
+          border: 1px solid #aaa;
+             
+      }
+      #email:focus {
+          border-color: #aaa;
+          box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+          box-shadow: 0 0 0 3px -moz-mac-focusring;
+          color: #222; 
+          outline: none;
+        }
     #contrasenia:hover{
         border: 1px solid #aaa;
            
@@ -219,7 +237,7 @@
         color: #222; 
         outline: none;
       }
-    .btn-login{
+    .btn-registro{
       margin-left: -5px;
     }
 

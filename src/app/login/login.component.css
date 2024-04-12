@@ -78,3 +78,16 @@ label {
   .btn-login{
     margin-left: -5px;
   }
+  .btn-responsable {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #BA9D15;
+    color: #ffff;
+    cursor: pointer;
+  }
+  
+  .btn-responsable:hover {
+    background-color: #D8B933;
+  }

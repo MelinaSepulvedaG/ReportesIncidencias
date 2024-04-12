@@ -15,8 +15,9 @@ li, ol {
 }
 
 .nav li a {
-    background-color: #08338F;
-    color:white;
+    background-color: #BA9D15;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
     text-decoration:none;
     padding:5px 20px;
     display:block;
@@ -26,7 +27,7 @@ li, ol {
 }
 
 .nav li a:hover{
-    background-color: rgb(57, 51, 241);
+    background-color: #D8B933;
 }
 .nav li ul {
     display:none;
@@ -37,7 +38,7 @@ li, ol {
 
 .nav li:hover > ul {
     display:block;
-    background-color:rgba(rgba(126, 127, 200, 0.904)8);
+    background-color: #D8B933;
 }
 
 .nav li ul li {

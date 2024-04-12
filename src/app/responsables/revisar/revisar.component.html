@@ -1,0 +1,66 @@
+<div class="revisar-reporte">
+    <div class="revisar-page">
+      <div class="revisar-container">
+        <form class="revisar-form">
+          <h2>Reporte de incidente</h2>
+          <div class="form-group">
+            <label for="nombreIncidente">Nombre del incidente</label>
+            <input type="text" id="nombreIncidente" name="nombreIncidente" class="form-control" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción del incidente</label>
+            <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+           
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de incidente</label>
+           
+            <select name="tipo" id="tipo">
+                 <option value="Limpieza">Limpieza</option>
+                <option value="Infraestructura">Infraestructura </option>
+                <option value="Administración">Administración</option> 
+                <option value="Redes "> Redes</option>
+                <option value="Pagina web">Pagina web</option>
+                
+              </select>
+          </div>
+          
+          <button  type="submit" class="btn-proceso">En proceso</button>
+          <button  type="submit" class="btn-resuelto">Resuelto</button>
+         
+        </form>
+      </div>
+  </div>
+
+ 
+
+        <!-- ------------------------FORMULARIO DE EVIDENCIA---------------------------  -->  
+  
+      <div class="evidencia-page">
+        <div class="evidencia-container">
+          <form class="evidencia-form">
+            <h2>Cargar evidencia de solucion</h2>
+            <div class="form-group">
+              <input type="file">
+             
+            </div>
+            <button class="btn-guardarEvidencia" type="submit">Guardar evidencia</button>
+            <h2>Evidencia del Incidente</h2>
+            
+            <div class="form-group">
+              <img class="img-evidencia" src="./assets/LOGO_FIM.png" alt="">
+            </div>
+
+          </form>
+        </div>
+      </div>
+   
+    </div>
+
+
+      
+ 
