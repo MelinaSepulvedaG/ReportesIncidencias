@@ -1,23 +1,24 @@
 <div class="table-wrapper">
-    <table class="fl-table">
+  <table class="fl-table">
+    <thead>
       <tr>
-          <th scope="col" style="background: rgb(29,112,184); font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;" >ID</th>
-          <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">NOMBRE REPORTE</th>
-          <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">AUTOR</th>
-          <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">FECHA</th>
-          <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">TIPO DE REPORTE</th>
-          <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">ESTATUS</th>
-          
+        <th scope="col" style="background: rgb(29,112,184); font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;" >ID</th>
+        <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">NOMBRE REPORTE</th>
+        <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">AUTOR</th>
+        <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">FECHA</th>
+        <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">TIPO DE REPORTE</th>
+        <th scope="col" style="background: rgb(29,112,184);font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">ESTATUS</th>
       </tr>
-      <tr >
-        <td  style="color: black;" (click)="verEstatus()">0001</td>
-        <td  style="color: black;">Aire acondicionado descompuesto aula 15</td> 
-        <td  style="color: black;"> Dacia Melina Sepulveda Gamez </td>
-        <td  style="color: black;"> 11/04/2024 </td>
-        <td  style="color: black;"> Infraestructura </td>
-        <td  style="color: black;"> Sin atender </td>
-        
-    
+    </thead>
+    <tbody>
+      <tr *ngFor="let reporte of reportes | keyvalue" (click)="verEstatus(reporte.value['ID_report'])">
+        <td style="color: black;">{{ reporte.value['ID_report']}}</td>
+        <td style="color: black;">{{ reporte.value['nomReport'] }}</td>
+        <td style="color: black;">{{ reporte.value['autor'].nomUser }}</td>
+        <td style="color: black;">{{ reporte.value['fecha_report'] }}</td>
+        <td style="color: black;">{{ reporte.value['tipo_report'] }}</td>
+        <td style="color: black;">{{ reporte.value['estatus'] }}</td>
       </tr>
-    </table>
-  </div>
+    </tbody>
+  </table>
+</div>

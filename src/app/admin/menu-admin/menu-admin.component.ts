@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServiciosService } from '../../servicios.service';
+
+import { Usuario } from '../../Modelos/usuario.model';
+
 @Component({
   selector: 'app-menu-admin',
   standalone: true,
@@ -8,15 +12,26 @@ import { Router } from '@angular/router';
   styleUrl: './menu-admin.component.css'
 })
 export class MenuAdminComponent {
-  constructor(private router:Router){}
+  usuario:Usuario=new Usuario;
+  constructor(private router:Router, private sesion:ServiciosService){}
   ngOnInit(): void {
+
+    this.sesion.getUsuario().subscribe(usuario => {
+      if (usuario !== null) {
+        this.usuario = usuario;
+      } else {
+
+        console.error('El usuario recibido es null.');
+      }
+    });
+    console.log("Alv si funciona?" + this.usuario.correo);
   }
 
   verReportes(): void{
     this.router.navigate(['Ver-reportes'])
   }
   cerrar_sesion(){
-  
+
     this.router.navigate(['']);
 }
   activar():void{
@@ -25,5 +40,5 @@ export class MenuAdminComponent {
   cambiarTipo(){
     this.router.navigate(['/Usuarios'])
   }
- 
+
 }

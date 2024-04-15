@@ -1,5 +1,15 @@
+<h1 class="titulo">Evidencias de Solución</h1>
 <div class="container">
-    <div class="evidencia1"></div>
-    <div class="evidencia2"></div>
-    <div class="evidencia3"></div>
+  <div class="evidencia1" *ngIf="evidenciasURLs[0]">
+    <h3 class="titulo-evidencia">Evidencia 1</h3>
+    <img class="imagen"  [src]="evidenciasURLs[0]" alt="Internet lento">
+  </div>
+  <div class="evidencia2" *ngIf="evidenciasURLs[1]">
+    <h3 class="titulo-evidencia">Evidencia 2</h3>
+    <img class="imagen"  [src]="evidenciasURLs[1]" alt="Internet lento">
+  </div>
+  <div class="evidencia3" *ngIf="evidenciasURLs[2]">
+    <h3 class="titulo-evidencia">Evidencia 3</h3>
+    <img class="imagen"  [src]="evidenciasURLs[2]" alt="Internet lento">
+  </div>
 </div>

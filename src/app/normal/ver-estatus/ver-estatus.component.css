@@ -1,14 +1,29 @@
+.titulo{
+color: black;
+font-style: bold;
+text-align: center;
+}
+
+.titulo-evidencia{
+
+  text-align: center;
+}
+
+
 .container{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    width: 500px;
+    width: 1000px;
     height: auto;
     margin-top: 50px;
-    margin-left: 30%;
+    margin-left: 17%;
+
+    /* border-color: black;
+    border-style: solid; */
 }
 .evidencia1{
-    width: 200px;
-  height: 200px;
+    width: 700px;
+  height: 350px;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 20px;
@@ -16,18 +31,26 @@
 
 }
 .evidencia2{
-    width: 200px;
-    height: 200px;
+  width: 700px;
+  height: 350px;
     border-radius: 10px;
     margin-right: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .evidencia3{
-  width: 200px;
-  height: 200px;
+  width: 700px;
+  height: 350px;
     border-radius: 10px;
     margin-right: 20px;
-   
+
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    
+
+}
+
+.imagen{
+  display: block;
+  margin: auto;
+
+  width:250px;
+   height:250px;
 }

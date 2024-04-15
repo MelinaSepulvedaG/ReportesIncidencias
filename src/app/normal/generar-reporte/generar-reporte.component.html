@@ -1,49 +1,52 @@
 <div class="generar-reporte">
   <div class="reporte-page">
     <div class="reporte-container">
-      <form class="reporte-form">
+      <form class="reporte-form" >
         <h2>Regístrar incidente</h2>
         <div class="form-group">
           <label for="nombreIncidente">Nombre del incidente</label>
-          <input type="text" id="nombreIncidente" name="nombreIncidente" class="form-control" placeholder="" required>
+          <input type="text" #nombreIncidente id="nombreIncidente" name="nombreIncidente" class="form-control" placeholder="" required>
         </div>
         <div class="form-group">
           <label for="descripcion">Descripción del incidente</label>
-          <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+          <textarea class="form-control" name="descripcion" #descripcion id="descripcion" cols="30" rows="5"></textarea>
         </div>
-        
+
         <div class="form-group">
           <label for="tipo">Tipo de incidente</label>
-         
-          <select name="area" id="area">
+
+          <select name="area" #area id="area">
                <option value="Limpieza">Limpieza</option>
               <option value="Infraestructura">Infraestructura </option>
-              <option value="Administración">Administración</option> 
+              <option value="Administración">Administración</option>
               <option value="Redes "> Redes</option>
               <option value="Pagina web">Pagina web</option>
-              
+
             </select>
         </div>
-       
-        
-        <button (click)="guardarReporte()" type="submit" class="btn-guardar">Guardar</button>
+
+
+        <button (click)="guardarReporte(nombreIncidente.value, descripcion.value,evidenciaSeleccionada,area.value)" type="button" class="btn-guardar">Guardar</button>
         <button (click)="cancelar()" type="submit" class="btn-cancelar">Cancelar</button>
-       
+
       </form>
     </div>
 </div>
-      <!-- ------------------------FORMULARIO DE EVIDENCIA---------------------------  -->  
+      <!-- ------------------------FORMULARIO DE EVIDENCIA---------------------------  -->
 
       <div class="evidencia-page">
         <div class="evidencia-container">
           <form class="evidencia-form">
             <h2>Evidencia del Incidente</h2>
-            
+
             <div class="form-group">
               <label for="evidencia">Cargar evidencia</label>
-              <input type="file" id="evidencia" name="evidencia" class="form-control" placeholder="" required>
+              <input  type="file" id="evidencia" name="evidencia" class="form-control" placeholder="" accept="image/*" required multiple (change)="onFileChange($event)">
+              <ng-container *ngIf="evidenciaSeleccionada && evidenciaSeleccionada.length">
+                <img style="display: inline-block; border-style: solid; border-color: #123fa1; border-width: 3px;"  width="150px" height="150px" *ngFor="let archivo of getFilesArray(evidenciaSeleccionada)" [src]="createObjectURL(archivo)" class="preview-img">
+              </ng-container>
             </div>
-           
+
 
           </form>
         </div>

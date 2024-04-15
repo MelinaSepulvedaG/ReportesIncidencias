@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import path from 'node:path';
 
-//COMPONENTES NORMAL    
+//COMPONENTES NORMAL
 
 import { LoginComponent } from './login/login.component';
 import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
@@ -33,8 +33,9 @@ export const routes: Routes = [
     { path: 'Generar-reporte', title: "Generar reporte", component:GenerarReporteComponent},
     {path: 'Mis-reportes', title: "Mis Reportes", component:MisReportesComponent},
     {path: 'Activar', title:"Activa tu cuenta", component:ActivarComponent},
-    {path: 'Estatus', title:"Estatus del reporte", component:VerEstatusComponent},
-   //ADMIN 
+    //{path: 'Estatus', title:"Estatus del reporte", component:VerEstatusComponent},
+    {path: 'Estatus/:ID_reporte', title:"Estatus del reporte", component:VerEstatusComponent},
+   //ADMIN
     {path: 'Asignar', title: "Asignar incidencia", component:AsignarComponent},
     {path: 'Ver-reportes', title: "Reportes de Incidencias", component:VerReportesComponent},
     {path: 'Detalles', title: "Detalles de incidencia", component:DetallesComponent},
